@@ -163,9 +163,7 @@ section {
 }
 
 #pj-display img {
-    width: 75rem;
-    height: auto;
-    outline: 10px solid blue;
+    height: 80vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
