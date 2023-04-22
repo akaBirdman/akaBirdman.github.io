@@ -99,5 +99,5 @@ function specsPhoenix() {
 function specsFour() {
     specsPage.style.setProperty('--main', 'red');
     doubleImage.src = "images/home/OrangeDouble.png";
-    swatchLabel.innerText = "Kill Jared's Mom";
+    swatchLabel.innerText = "Jared's Mom";
 };
