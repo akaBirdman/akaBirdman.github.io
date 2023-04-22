@@ -214,10 +214,31 @@ h2 {
 		padding: calc(var(--grid-height) / 2);
 	}
 
+	#grid-propulsion {
+		grid-template-columns: 800px repeat(11, var(--card-width));
+		grid-template-areas: 
+			"t a b b d f g g h i i"
+			"t a c e e f g g h i i";
+	}
+
 	#structures {
 		grid-auto-rows: var(--grid-height);
 		grid-auto-columns: var(--grid-width);
 		grid-template-areas:
+			"t a a b b d f g g h i i"
+			"t a a c e e f g g h i i";
+	}
+
+	#grid-propulsion {
+		grid-template-columns: 800px repeat(11, var(--card-width));
+		grid-template-areas: 
+			"t a b b d f g g h i i"
+			"t a c e e f g g h i i";
+	}
+
+	#grid-CAD {
+		grid-template-columns: 500 repeat(11, var(--card-width));
+		grid-template-areas: 
 			"t a a b b d f g g h i i"
 			"t a a c e e f g g h i i";
 	}
