@@ -1,0 +1,230 @@
+:root {
+	--orange: #fe5c00;
+	--dark-gray: #161718;
+
+	--grid-width: calc(var(--grid-height) * 13/12);
+}
+
+#device {
+	position: fixed;
+}
+
+h2 {
+	color: var(--orange);
+	font-size: 2rem;
+	letter-spacing: 1rem;
+	font-weight: 800;
+}
+
+.spacer {
+	height: 150vh;
+}
+
+.scroller {
+	display: flex;
+}
+
+.scroller-frame {
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.scroller-camera {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--dark-gray);
+}
+
+.scroller-grid {
+	display: grid;
+	gap: calc(var(--grid-height) / 6);
+}
+
+.card:nth-child(1)  { grid-area: t;}
+.card:nth-child(2)  { grid-area: a;}
+.card:nth-child(3)  { grid-area: b;}
+.card:nth-child(4)  { grid-area: c;}
+.card:nth-child(5)  { grid-area: d;}
+.card:nth-child(6)  { grid-area: e;}
+.card:nth-child(7)  { grid-area: f;}
+.card:nth-child(8)  { grid-area: g;}
+.card:nth-child(9)  { grid-area: h;}
+.card:nth-child(10) { grid-area: i;}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.15s ease-out;
+	transform-style: preserve-3d;
+}
+
+.card-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	overflow: hidden;
+	background-size: cover;
+	background-color: black;
+}
+
+.card-content p {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(5px);
+	opacity: 0;
+}
+
+.card-content p:hover {
+	opacity: 100;
+}
+
+#andrew	{ background-image: url("../images/Structures/andrew.jpg"); background-position: 40%; }
+#tooling { background-image: url("../images/Structures/tooling.JPG"); }
+#ethaniel { background-image: url("../images/Structures/ethaniel.JPG"); background-position: 0 25%; }
+#garrett { background-image: url("../images/Structures/garrett.JPG"); background-position: 55%; }
+#coupon { background-image: url("../images/Structures/coupon.JPG"); }
+#ben { background-image: url("../images/Structures/ben.JPG"); }
+#structure { background-image: url("../images/Structures/structure.jpg"); }
+
+#dabwp:hover {
+	font-size: 1.55rem;
+	color: var(--orange);
+	background-color: white;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#osctrw {
+	text-align: center;
+	line-height: 3rem;
+	background-color: black;
+}
+#osctrw:hover {
+	line-height: 4.5rem;
+	text-shadow:
+		0 0px 4px #ffffff,
+		0 2px 20px rgb(255,208,0),
+		0 5px 20px var(--orange),
+		0 10px 40px #000000;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 1024px and down) */
+@media only screen and (max-width: 1024px) {
+	:root {
+		--grid-height: 35vw;
+	}
+
+	.scroller {
+		justify-content: center;
+	}
+
+	.scroller-camera {
+		width: 100vw;
+		padding: calc(var(--grid-height) / 2) 0;
+	}
+
+	.scroller-frame {
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	#structures {
+		grid-template-rows: 80vh repeat(11, var(--grid-height));
+		grid-auto-columns: var(--grid-width);
+		grid-template-areas:
+			"t t"
+			"a a"
+			"a a"
+			"b b"
+			"c d"
+			"e e"
+			"g g"
+			"g g"
+			"f h"
+			"f h"
+			"i i"
+			"i i";
+	}
+
+	/* .card {
+		transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	} */
+
+	#dabwp {
+		font-size: 1.25rem;
+		color: var(--orange);
+		background-color: white;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+
+	#osctrw {
+		line-height: 3rem;
+		text-shadow: 0 0.2rem 0.25rem var(--orange);
+	}
+	
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+	:root {
+		--grid-height: 240px;
+	}
+
+	body { overflow-x: hidden; }
+
+	h2 {
+		letter-spacing: 3rem;
+		padding-left: calc(var(--grid-height) / 2);
+	}
+
+	.scroller-frame {
+		height: 100vh;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+
+	.scroller-camera {
+		padding: calc(var(--grid-height) / 2);
+	}
+
+	#structures {
+		grid-auto-rows: var(--grid-height);
+		grid-auto-columns: var(--grid-width);
+		grid-template-areas:
+			"t a a b b d f g g h i i"
+			"t a a c e e f g g h i i";
+	}
+
+	.card-content {
+		font-size: 1.5rem;
+		font-weight: 800;
+		line-height: 2rem;
+	}
+}

@@ -1,0 +1,230 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gradient Behind Text Reveal */
+#home-intro {
+    position: absolute;
+    margin-top: 100px;
+    width: 50vw;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#intro {
+    position: sticky;
+    top: 25vh;
+    max-width: 40vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+#intro .text{
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    margin: 0;
+
+    background-color: black;
+    mix-blend-mode: multiply;
+    
+    z-index: 5;
+}
+
+#gradient {
+    position: absolute;
+    width: 50vw;
+    height: 75rem;
+    top: 100%;
+
+    filter: blur(5px);
+    background: linear-gradient(180deg, transparent 0%, var(--orange) 25%, rgba(255,177,133,1) 48%, rgba(255,177,133,1) 52%, var(--orange) 75%, transparent 100%);
+}
+/* ^ Gradient Behind Text Reveal ^ */
+
+/* Name Reveal */
+#hero-climax {
+    margin-top: -35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-climax h2 {
+    position: sticky;
+    top: 25vh;
+
+    font-family: Tornado;
+    letter-spacing: 0.25em;
+    color: black;
+
+    padding: 0;
+    margin: 0;
+    z-index: 50;
+}
+
+.big-gradient {
+    height: auto;
+    z-index: 0;
+}
+/* ^ Name Reveal ^ */
+
+/* Paint Jobs */
+#specs {
+    --main: #fe5c00;
+    --secondary: black;
+    --complementary: yellow;
+
+    height: 200vh;
+    padding-top: 2rem;
+
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, var(--dark-gray) 40%);
+}
+
+#paintjobs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color-toggle {
+    position: sticky;
+    top: var(--nav-height);
+    padding-top: 0.2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+
+    font-size: 1.25rem;
+
+    z-index: 500;
+}
+
+#color-toggle > span {
+    position: absolute;
+
+    text-align: right;
+    transform: translateX(-11rem);
+}
+
+.color-button {
+    width: 1.25rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0.5rem 0;
+    outline: 0.2rem solid white;
+
+    transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.color-button.current {
+    transform: scale(1.1);
+    outline: 0.25rem solid white;
+}
+
+#pj-orange {
+    background: var(--orange);
+}
+
+#pj-buzz {
+    background: linear-gradient(135deg, rgba(117,61,160,1) 25%, rgba(75,206,32,1) 100%);
+}
+
+#pj-phoenix {
+    background: linear-gradient(135deg, rgba(77,77,77,1) 30%, rgba(254,92,0,1) 100%);
+}
+
+#pj-orange {
+    background: var(--orange);
+}
+
+#pj-display {
+    margin-top: 2rem;
+
+    display: grid;
+    place-items: center;
+    
+    outline: 5px solid var(--main);
+}
+
+#pj-display img {
+    width: 75rem;
+    height: auto;
+    outline: 10px solid blue;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .big-gradient {
+        width: 600px;
+    }
+
+    #hero-climax h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .big-gradient {
+        width: 768px;
+    }
+
+    #hero-climax h2 {
+        font-size: 5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .big-gradient {
+        width: 1025px;
+    }
+
+    #hero-climax h2 {
+        font-size: 6rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    #hero-climax h2 {
+        font-size: 7rem;
+    }
+
+    .big-gradient {
+        width: 1440px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .big-gradient {
+        width: 100%;
+    }
+
+    #hero-climax h2 {
+        font-size: 10rem;
+    }
+}
+
+/* Main Snapping Point For Mobile */
+@media only screen and (max-width: 768px) {
+    #color-toggle > span {
+        display: none;
+    }
+}
