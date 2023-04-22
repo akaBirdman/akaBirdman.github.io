@@ -16,11 +16,11 @@ let $showDevice = document.getElementById('device');
 
 console.log(isMobileDevice);
 
-if (isMobileDevice) {
-    $showDevice.innerHTML = "You are using Mobile";
-} else {
-    $showDevice.innerHTML = "You are using Desktop";
-};
+// if (isMobileDevice) {
+//     $showDevice.innerHTML = "You are using Mobile";
+// } else {
+//     $showDevice.innerHTML = "You are using Desktop";
+// };
 
 // Defining all elements to edit
 const $scroller = document.querySelectorAll(".scroller");
@@ -126,8 +126,10 @@ $cards.forEach((element, index) => {
 	
 	function handleIntersect(entries, observer) {
 		entries.forEach((entry) => {
-			entry.target.style.opacity = Math.pow(entry.intersectionRatio, 0.5)
-			// entry.target.style.scale = Math.pow((entry.intersectionRatio, entry.intersectionRatio), 0.1)
+			if (window.innerWidth > 1024) {
+				entry.target.style.opacity = Math.pow(entry.intersectionRatio, 0.5)
+				// entry.target.style.scale = Math.pow((entry.intersectionRatio, entry.intersectionRatio), 0.1)
+			}
 		});
 	}
 });
