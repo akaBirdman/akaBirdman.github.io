@@ -1,40 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/home.css">
-
-	<!-- Scripts -->
-	<script src="index.js" type="module" defer></script>
-	<script src="javascript/footer.js" type="module" defer></script>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<script src="https://kit.fontawesome.com/cb8625b2b2.js" crossorigin="anonymous"></script>
-
-	<!-- Name of Page -->
-	<title>Home | Phoenix</title>
-</head>
-
-<body>
-
-	<header>
-		<div id="navbar">
-			<h1>pHoeNix</h1>
-			
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="html/who_we_are.html">Who We Are</a></li>
-					<li><a href="html/gallery.html">Gallery</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
 	<div id="home-intro">
 		<lottie-player src="images/lottie/home-intro.json" background="transparent" speed="1" style="width: 100%; height: auto;" autoplay></lottie-player>
 	</div>
@@ -60,66 +23,14 @@
 			<div class="color-button" id="pj-phoenix"></div>
 			<div class="color-button" id="pj-four"></div>
 		</div>
-
-		<div id="pj-display">
-			<img src="images/home/OrangeDouble.png" alt="BuzzDouble" id="double-image">
-		</div>
-
-		<div id="info-container">
-			<div id="info">
-				<ul class="open">
-					<div>
-						<span>Description</span>
-						<svg xmlns="http://www.w3.org/2000/svg" class="tab" width="16" height="16" viewBox="0 0 160 160">
-							<rect class="vertical-line" x="70" width="15" height="160"/>
-							<rect class="horizontal-line" y="70" width="160" height="15"/>
-						</svg>
-					</div>
-		
-					<li>- Sleek flying wing design.</li>
-					<li>- Can be deployed by one person.</li>
-					<li>- Designed to reach over 300 mph.</li>
-					<li>- Over 50 possible rocket configurations.</li>
-					<li>- Made with state of the art composite manufacturing.</li>
-					<li>- Build to fly in 3 days.</li>
-					<li>- Flexible space for personalized components.</li>
-					<li><img src="images/home/OrangeIso.png" alt="Isometric View" id="iso-image"></li>
-				</ul>
-				
-				<ul class="closed">
-					<div>
-						<span>Specifications</span>
-						<svg xmlns="http://www.w3.org/2000/svg" class="tab" width="16" height="16" viewBox="0 0 160 160">
-							<rect class="vertical-line" x="70" width="15" height="160"/>
-							<rect class="horizontal-line" y="70" width="160" height="15"/>
-						</svg>
-					</div>
-				</ul>
-				
-				<ul class="closed">
-					<div>
-						<span>Components</span>
-						<svg xmlns="http://www.w3.org/2000/svg" class="tab" width="16" height="16" viewBox="0 0 160 160">
-							<rect class="vertical-line" x="70" width="15" height="160"/>
-							<rect class="horizontal-line" y="70" width="160" height="15"/>
-						</svg>
-					</div>
-				</ul>
-			
-				<ul class="closed bottom">
-					<div>
-						<span>Rato</span>
-						<svg xmlns="http://www.w3.org/2000/svg" class="tab" width="16" height="16" viewBox="0 0 160 160">
-							<rect class="vertical-line" x="70" width="15" height="160"/>
-							<rect class="horizontal-line" y="70" width="160" height="15"/>
-						</svg>
-					</div>
-				</ul>
+		<div id="paintjobs">
+			<div id="pj-display">
+				<img src="images/home/OrangeDouble.png" alt="BuzzDouble" id="double-image">
 			</div>
 		</div>
 	</section>
 
-	<footer>
+    <footer>
 		<div id="top">
 			<img class="logo" src="./images/PhoenixLogo.svg" alt="PhoenixLogo">
 
@@ -170,7 +81,3 @@
 			<p>Oklahoma State University | SpeedFest Orange Team | 2023</p>
 		</div>
 	</footer>
-
-</body>
-
-</html>

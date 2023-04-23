@@ -2,10 +2,11 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +40,7 @@ section {
     margin: 0;
 
     background-color: black;
+    outline: 5px solid black;
     mix-blend-mode: multiply;
     
     z-index: 5;
@@ -46,7 +48,7 @@ section {
 
 #gradient {
     position: absolute;
-    width: 50vw;
+    width: 100vw;
     height: 75rem;
     top: 100%;
 
@@ -93,26 +95,22 @@ section {
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, var(--dark-gray) 40%);
 }
 
-#paintjobs {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #color-toggle {
     position: sticky;
-    top: var(--nav-height);
-    padding-top: 0.2rem;
+    top: calc(var(--nav-height) + 1px);
+    padding: 0.3rem 0;
     
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1.5rem;
 
     font-size: 1.25rem;
 
-    z-index: 500;
+    z-index: 50;
+    width: 100vw;
+    background: rgba(48, 48, 48, 0);
+    backdrop-filter: blur(10px);
 }
 
 #color-toggle > span {
@@ -127,14 +125,14 @@ section {
     aspect-ratio: 1;
     border-radius: 50%;
     margin: 0.5rem 0;
-    outline: 0.2rem solid white;
+    box-shadow: 0 0 0 0.2rem white;
 
     transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .color-button.current {
     transform: scale(1.1);
-    outline: 0.25rem solid white;
+    box-shadow: 0 0 0 0.25rem white;
 }
 
 #pj-orange {
@@ -158,18 +156,106 @@ section {
 
     display: grid;
     place-items: center;
-    
-    outline: 5px solid var(--main);
 }
 
 #pj-display img {
     height: 80vh;
+    width: auto;
 }
+
+/* Info Tabs for Plane */
+#info {
+    display: block;
+    width: 40vw;
+    
+    margin: 1rem;
+    padding: 1rem;
+
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+
+    color: white;
+    background: var(--dark-gray);
+}
+
+#info > ul {
+    height: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    
+    transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+#info > ul.bottom {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+#info > ul > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info > ul > div span {
+    pointer-events: none;
+}
+
+#info > ul > div svg {
+    pointer-events: none;
+}
+
+#info li {
+    width: 100%;
+    padding-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#info .tab rect {
+	fill: white;
+	transition: all 400ms;
+    transform-origin: 50% 50%;
+}
+
+#info li > img {
+    width: 80%;
+}
+
+/* Open */
+#info > ul.open {
+    height: 60vh;
+    
+    box-shadow: inset 0 0 0 2px var(--main);
+}
+
+#info .open > div {
+    margin-bottom: 0.5rem;
+}
+
+#info .open > li {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+#info .open .tab .vertical-line {
+	opacity: 0;
+	transform: rotate(90deg);
+}
+
+/* Closed */
+#info .closed .tab {
+	opacity: 1;
+}
+
+#info .closed > li {
+    display: none;
+}
+/* ^ Info Tabs for Plane ^ */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .big-gradient {
-        width: 600px;
+        width: 100%;
     }
 
     #hero-climax h2 {
@@ -208,6 +294,20 @@ section {
     .big-gradient {
         width: 1440px;
     }
+
+    #pj-display {
+        position: sticky;
+        top: 10rem;
+    }
+
+    #info-container {
+        position: sticky;
+        top: 10rem;
+
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -220,9 +320,41 @@ section {
     }
 }
 
+/* Large devices (laptops/desktops, 1024px and down) */
+@media only screen and (max-width: 1024px) {
+    #intro .text {
+        font-size: 2rem;
+    }
+
+    #info {
+        width: 80vw;
+    }
+
+    #specs {
+        height: auto;
+    }
+}
+
 /* Main Snapping Point For Mobile */
 @media only screen and (max-width: 768px) {
     #color-toggle > span {
         display: none;
+    }
+
+    #intro {
+        max-width: 80vw;
+    }
+
+    #home-intro {
+        position: absolute;
+        margin-top: 100px;
+        width: 75vw;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    #pj-display img {
+        width: 80vw;
+        height: auto;
     }
 }
