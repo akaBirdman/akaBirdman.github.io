@@ -17,7 +17,7 @@ $gradient.animate(
         }),
         fill: "forwards",
         delay: { phase: "contain", percent: CSS.percent(0) },
-        endDelay: { phase: "contain", percent: CSS.percent(150) }
+        endDelay: { phase: "contain", percent: CSS.percent(100) }
     }
 );
 
@@ -139,20 +139,18 @@ if (window.innerWidth > 1024) {
 // Revealing Band Behind Color Toggles
 const toggleBar = document.getElementById('color-toggle');
 
-if (window.innerWidth > 1024) {
-    toggleBar.animate(
-        
-        {
-            background: ["rgba(48, 48, 48, 0)", `rgba(48, 48, 48, 0.25)`]
-        },
-        {
-            timeline: new ViewTimeline({
-                subject: specsPage,
-                axis: "block"
-            }),
-            fill: "forwards",
-            delay: { phase: "contain", percent: CSS.percent(1) },
-            endDelay: { phase: "contain", percent: CSS.percent(10) }
-        }
-    );
-}
+toggleBar.animate(
+    
+    {
+        background: ["rgba(48, 48, 48, 0)", `rgba(48, 48, 48, 0.25)`]
+    },
+    {
+        timeline: new ViewTimeline({
+            subject: specsPage,
+            axis: "block"
+        }),
+        fill: "forwards",
+        delay: { phase: "contain", percent: CSS.percent(1) },
+        endDelay: { phase: "contain", percent: CSS.percent(10) }
+    }
+);

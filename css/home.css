@@ -23,7 +23,8 @@ section {
 
 #intro {
     position: sticky;
-    top: 25vh;
+    top: 0;
+    /* transform: translateY(50%); */
     max-width: 40vw;
     width: 100%;
     display: flex;
@@ -31,6 +32,8 @@ section {
     align-items: center;
     background-color: black;
     overflow: hidden;
+
+    z-index: 25;
 }
 
 #intro .text{
@@ -62,19 +65,33 @@ section {
     margin-top: -35vh;
     display: flex;
     flex-direction: column;
+    z-index: 50;
+}
+
+#hero-climax span {
+    position: sticky;
+    top: 25vh;
+    z-index: 50;
 }
 
 #hero-climax h2 {
-    position: sticky;
-    top: 25vh;
-
     font-family: Tornado;
     letter-spacing: 0.25em;
     color: black;
 
     padding: 0;
     margin: 0;
-    z-index: 50;
+}
+
+#hero-climax h3 {
+    position: relative;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+
+    left: 5em;
+    margin: 0;
 }
 
 .big-gradient {
@@ -261,6 +278,11 @@ section {
     #hero-climax h2 {
         font-size: 3rem;
     }
+
+    #hero-climax h3 {
+        font-size: 1rem;
+        left: 0;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -271,6 +293,10 @@ section {
 
     #hero-climax h2 {
         font-size: 5rem;
+    }
+
+    #hero-climax h3 {
+        font-size: 1rem;
     }
 }
 
@@ -283,12 +309,20 @@ section {
     #hero-climax h2 {
         font-size: 6rem;
     }
+
+    #hero-climax h3 {
+        font-size: 1rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 1025px and up) */
 @media only screen and (min-width: 1025px) {
     #hero-climax h2 {
         font-size: 7rem;
+    }
+
+    #hero-climax h3 {
+        font-size: 1rem;
     }
 
     .big-gradient {
@@ -316,7 +350,7 @@ section {
     }
 
     #hero-climax h2 {
-        font-size: 10rem;
+        font-size: 7rem;
     }
 }
 
