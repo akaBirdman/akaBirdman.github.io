@@ -12,3 +12,10 @@ document.addEventListener('click', expander => {
         })
     }
 });
+
+document.addEventListener('click', expander => {
+    if (expander.target.matches('#navtab')) {
+        document.querySelector('#navtab').classList.toggle('minus');
+        document.querySelector('nav ul').classList.toggle('show');
+    }
+});

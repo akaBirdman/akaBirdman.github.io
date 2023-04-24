@@ -102,8 +102,8 @@ function specsFour() {
     doubleImage.src = `images/home/${paintColor}Double.png`;
     isoImage.src = `images/home/${paintColor}Iso.png`;
     topImage.src = `images/home/${paintColor}Top.png`;
-    
-    swatchLabel.innerText = "Jared's Mom";
+
+    swatchLabel.innerText = "Orange";
 };
 
 // Controlling Tabs for Plane Information

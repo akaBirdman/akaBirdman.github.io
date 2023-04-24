@@ -36,15 +36,19 @@ nav {
 	align-items: center;
 }
 
-.navtab {
+#navtab {
 	display: none;
-	outline: 5px solid red;
 }
 
-.navtab rect {
+#navtab rect {
 	fill: white;
 	transition: all 400ms;
     transform-origin: 50% 50%;
+}
+
+#navtab.minus .vertical-line {
+	opacity: 0;
+	transform: rotate(90deg);
 }
 
 #navbar {
@@ -294,16 +298,25 @@ footer p {
 		margin: 1rem 0 0 0;
 	}
 
-	.navtab {
+	#navtab {
 		display: block;
 	}
 
 	nav ul {
 		position: absolute;
+		display: none;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		top: 3.5rem;
+		right: 1rem;
+		z-index: 1000;
+		background: black;
+		outline: 3px solid white;
+		padding: 1rem;
 	}
 
-	/* nav li {
-		opacity: 0;
-		display: none;
-	} */
+	nav ul.show {
+		display: flex;
+	}
 }
