@@ -24,7 +24,6 @@ section {
 #intro {
     position: sticky;
     top: 0;
-    /* transform: translateY(50%); */
     max-width: 40vw;
     width: 100%;
     display: flex;
@@ -62,7 +61,7 @@ section {
 
 /* Name Reveal */
 #hero-climax {
-    margin-top: -35vh;
+    /* margin-top: -35vh; */
     display: flex;
     flex-direction: column;
     z-index: 50;
@@ -269,6 +268,67 @@ section {
 }
 /* ^ Info Tabs for Plane ^ */
 
+/* More Info */
+#end-info {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    background: var(--dark-gray);
+}
+
+#stuff {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#banner {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#stuff .grid {
+    margin-top: 5rem;
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, calc(100%/2 - 2rem)));
+    gap: 2rem;
+}
+
+#stuff .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#stuff .im {
+    width: 100%;
+    aspect-ratio: 2;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#stuff h4 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#stuff p {
+    text-align: justify;
+}
+/* ^ More Info ^ */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .big-gradient {
@@ -322,7 +382,7 @@ section {
     }
 
     #hero-climax h3 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .big-gradient {

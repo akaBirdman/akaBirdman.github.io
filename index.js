@@ -154,3 +154,8 @@ toggleBar.animate(
         endDelay: { phase: "contain", percent: CSS.percent(10) }
     }
 );
+
+const intro = document.getElementById('intro');
+
+intro.style.transform = `translateY(${window.innerHeight/2 - intro.offsetHeight/2}px)`;
+console.log(window.innerHeight - intro.offsetHeight);
