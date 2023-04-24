@@ -176,6 +176,24 @@ h2 {
 	opacity: 100;
 }
 
+#aero1  { background-image: url("../images/aero/A62I2123.JPG"); background-position: 40%; }
+#aero2  { background-image: url("../images/aero/A62I2224.JPG"); background-position: 40%; }
+#aero3  { background-image: url("../images/aero/Dan\ Fixing.JPG"); background-position: 40%; }
+#aero4  { background-image: url("../images/aero/DSCF0390.JPG"); background-position: 40%; }
+#aero5  { background-image: url("../images/aero/DSCF0626.JPG"); background-position: 40%; }
+#aero6  { background-image: url("../images/aero/payton.jpeg"); background-position: 40%; }
+#aero7  { background-image: url("../images/aero/pulley_kylerpayton.png"); background-position: 40%; }
+#aero8  { background-image: url("../images/aero/payton_sabot.png"); background-position: 40%; }
+#aero9  { background-image: url("../images/aero/payton_sabot2.jpeg"); background-position: 40%; }
+
+#cad1  { background-image: url("../images/cad/MicrosoftTeams-image.png"); background-position: 40%; }
+#cad2  { background-image: url("../images/cad/MicrosoftTeams-image\ \(1\).png"); background-position: 40%; }
+#cad3  { background-image: url("../images/cad/MicrosoftTeams-image\ \(2\).png"); background-position: 40%; }
+#cad4  { background-image: url("../images/cad/MicrosoftTeams-image\ \(3\).png"); background-position: 40%; }
+#cad6 { background-image: url("../images/cad/MicrosoftTeams-image\ \(4\).png"); background-position: 40%; }
+#cad7  { background-image: url("../images/cad/MicrosoftTeams-image\ \(5\).png"); background-position: 40%; }
+#cad8  { background-image: url("../images/cad/MicrosoftTeams-image\ \(6\).png"); background-position: 40%; }
+
 #rocket { background-image: url("../images/propulsion/rocket-test.JPG"); background-position: 40%; }
 #carson-image { background-image: url("../images/propulsion/Carson.jpg"); background-position: 40%; }
 #erasmo-solder { background-image: url("../images/propulsion/Erasmo\ soldering.png"); background-position: 40%; }
