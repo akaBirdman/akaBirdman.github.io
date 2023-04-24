@@ -56,6 +56,7 @@ function changeMain(e) {
 
 const doubleImage = document.getElementById('double-image');
 const isoImage = document.getElementById('iso-image');
+const topImage = document.getElementById('top-image');
 const swatchLabel = document.querySelector('#color-toggle > span');
 
 let paintColor;
@@ -68,6 +69,8 @@ function specsOrange() {
     paintColor = "Orange"
     doubleImage.src = `images/home/${paintColor}Double.png`;
     isoImage.src = `images/home/${paintColor}Iso.png`;
+    topImage.src = `images/home/${paintColor}Top.png`;
+
     swatchLabel.innerText = "Orange";
 }
 
@@ -77,6 +80,8 @@ function specsBuzz() {
     paintColor = "Buzz"
     doubleImage.src = `images/home/${paintColor}Double.png`;
     isoImage.src = `images/home/${paintColor}Iso.png`;
+    topImage.src = `images/home/${paintColor}Top.png`;
+
     swatchLabel.innerText = "To Infinity";
 }
 
@@ -86,6 +91,7 @@ function specsPhoenix() {
     paintColor = "Phoenix"
     doubleImage.src = `images/home/${paintColor}Double.png`;
     isoImage.src = `images/home/${paintColor}Iso.png`;
+    topImage.src = `images/home/${paintColor}Top.png`;
     swatchLabel.innerText = "Phoenix";
 }
 
@@ -95,6 +101,8 @@ function specsFour() {
     paintColor = "Orange"
     doubleImage.src = `images/home/${paintColor}Double.png`;
     isoImage.src = `images/home/${paintColor}Iso.png`;
+    topImage.src = `images/home/${paintColor}Top.png`;
+    
     swatchLabel.innerText = "Jared's Mom";
 };
 

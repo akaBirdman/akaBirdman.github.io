@@ -31,6 +31,22 @@ header {
 	z-index: 500;
 }
 
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.navtab {
+	display: none;
+	outline: 5px solid red;
+}
+
+.navtab rect {
+	fill: white;
+	transition: all 400ms;
+    transform-origin: 50% 50%;
+}
+
 #navbar {
 	max-width: 1000px;
 	width: 100%;
@@ -277,4 +293,17 @@ footer p {
 		font-size: 0.9rem;
 		margin: 1rem 0 0 0;
 	}
+
+	.navtab {
+		display: block;
+	}
+
+	nav ul {
+		position: absolute;
+	}
+
+	/* nav li {
+		opacity: 0;
+		display: none;
+	} */
 }

@@ -1,42 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/competition.css">
+<html>
 
-	<!-- Scripts -->
-	<script src="../javascript/competition.js" type="module" defer></script>
-	<script src="../javascript/footer.js" type="module" defer></script>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<script src="https://kit.fontawesome.com/cb8625b2b2.js" crossorigin="anonymous"></script>
+	<head>
+		<title>The Competition | Phoenix</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/competition.css">
+		<script src="../javascript/competition.js" type="module" defer></script>
+		<script src="../javascript/footer.js" type="module" defer></script>
+        <script src="https://kit.fontawesome.com/cb8625b2b2.js" crossorigin="anonymous"></script>
 
-	<!-- Name of Page -->
-	<title>The Competition | Phoenix</title>
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<header>
-		<div id="navbar">
-			<h1>pHoeNix</h1>
-			
-			<nav>
+        <header>
+			<div id="navbar">
+				<h1>pHoeNix</h1>
+				
+				<nav>
+					<ul>
+						<li><a href="../index.html">Our Plane</a></li>
+						<li><a href="../html/who_we_are.html">Who We Are</a></li>
+						<li><a href="../html/competition.html">The Competition</a></li>
+						<li><a href="../html/gallery.html">Gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <div class="speedfest">
+            <a href="https://speedfest.okstate.edu/" target="_blank"><img src="../images/competition/Speedfest.png" alt="speedfest logo"></a>
+        </div>
+
+        <section id="competition">
+            <h1>Speedfest XII</h1>
+            <p id="comp-desc">For Speedfest XII, two groups comprising of 22 students each (known as the Black Team and Orange Team) have been assigned the task of designing and constructing a racing aircraft that operates on high-speed rocket and electric power. Apart from showcasing swiftness, efficiency, and proficiency in pylon racing, both teams are required to ensure that their planes are dependable, long-lasting, and economical. This year's contest will comprise of three stages, including a rocket glide combined with a pylon race, a maximum speed challenge, and the typical endurance test. The event is scheduled to take place on April 29th, 2023, at the OSU Unmanned Aircraft Flight Station in Glencoe, OK. Check out the video below to know more about Speedfest and the exclusive missions of this year.</p>
+        
+            <h2>Mission 1: Pylon Race</h2>
+            <div class="mission">
+                <span>
+                    <p><b>Objective:</b> The mission is split into two phases: Rocket-glide phase and Electric-pylon phase. During the Rocket-glide phase, the plane utilizes a rocket-assisted takeoff and ascends into a glide; the planes glide time will be recorded for racing the figure-8 pylon course. At the instant the plane utilizes the onboard electric propulsion, the electric-pylon phase will begin. Score is based on flag count within the time set by the rocket-glide phase. The plane needs to land without any major damage for the mission to be completed.</p>
+                    <p><b>Goal:</b> Win this mission by maximizing the number flags the plane can pass.</p>
+                    <p><b>Points:</b> First Place – 15 points, Second Place – 10 points</p>
+                </span>
+                <div class="im" style="background-image: url(../images/competition/mission1.jpeg);"></div>
+            </div>
+
+            <h2>Mission 2: Top Speed</h2>
+            <div class="mission">
+                <span>
+                    <p><b>Objective:</b> Within a 10 second window, launch the plane into the air and fly the plane to reach its top speed. The plane needs to land without any major damage for the mission to be completed.</p>
+                    <p><b>Goal:</b> Win this mission by getting the fastest recorded speed.</p>
+                    <p><b>Points:</b> First Place – 15 points, Second Place – 10 points</p>
+                </span>
+                <div class="im" style="background-image: url(../images/competition/mission2.jpeg);"></div>
+            </div>
+
+            <h2>Mission 3: Endurance</h2>
+            <div class="mission">
+                <span>
+                    <p><b>Objective:</b> Fly your plane for more than 4 minutes. While flying, utilize the time to showcase the planes aerobatic performance and unique design performance features. The plane needs to land without any major damage for the mission to be completed.</p>
+                    <p><b>Goal:</b> Win this mission by achieving objective endurance time.</p>
+                    <p><b>Points:</b> 5 points</p>
+                </span>
+                <div class="im" style="background-image: url(../images/competition/mission3.jpeg);"></div>
+            </div>
+
+            <h2>Other Challenges</h2>
+            <div class="mission" id="other">
+                <span>
+                    <p><b>Marketing:</b></p>
+                    <p>PHOENIX will be judged by RC and industry related experts in their marketing strategy for their aircraft. Orange team will need to construct a professional/informational website and 2-min marketing video for the judges to score.</p>
+                    <p><b>Points:</b> 15 points subjected to the marketing judges choice</p>
+                </span>
+                <span>
+                    <p><b>Cost Bid:</b></p>
+                    <p>Each airframe produced by the team will track the cost for labor/manufacturing costs. During production, the following cost categories will be tracked: Production Tooling, Layup Quality, Fit and Finish, Systems Intergation, etc.</p>
+                    <p><b>Points:</b> Objective - 5 points < $2000/plane, Threshold – 2 points $3000/plane </p>
+                </span>
+            </div>
+
+        </section>
+
+        <div class="speedfest">
+            <h3>Hosted By:</h3>
+            <img src="https://speedfest.okstate.edu/Speedfest_XII/logoblock13.jpg" alt="">
+        </div>
+
+        <div id="transition"></div>
+
+        <footer>
+			<div id="top">
+				<img class="logo" src="../images/PhoenixLogo.svg" alt="PhoenixLogo">
+	
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../html/who_we_are.html">Who We Are</a></li>
-					<li><a href="../html/gallery.html">Gallery</a></li>
+					<div>
+						<h3>About</h3>
+						<svg xmlns="http://www.w3.org/2000/svg" class="plus" width="16" height="16" viewBox="0 0 160 160">
+							<rect class="vertical-line" x="70" width="15" height="160"/>
+							<rect class="horizontal-line" y="70" width="160" height="15"/>
+						</svg>
+					</div>
+					<li><a href="https://go.okstate.edu/" target="_blank">Oklahoma State University</a></li>
+					<li><a href="https://speedfest.okstate.edu/" target=”_blank”>Speedfest</a></li>
+					<li><a href="https://aerodesign.okstate.edu/" target="_blank">Aerospace Design</a></li>
+					<li><a href="">Minecraft?</a></li>
 				</ul>
-			</nav>
-		</div>
-	</header>
+	
+				<ul>
+					<div>
+						<h3>More</h3>
+						<svg xmlns="http://www.w3.org/2000/svg" class="plus" width="16" height="16" viewBox="0 0 160 160">
+							<rect class="vertical-line" x="70" width="15" height="160"/>
+							<rect class="horizontal-line" y="70" width="160" height="15"/>
+						</svg>
+					</div>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./html/who_we_are.html">Who We Are</a></li>
+					<li><a href="./html/gallery.html">Gallery</a></li>
+					<li><a href="">The Competition</a></li>
+				</ul>
+	
+				<ul>
+					<div>
+						<h3>Follow Us</h3>
+						<svg xmlns="http://www.w3.org/2000/svg" class="plus" width="16" height="16" viewBox="0 0 160 160">
+							<rect class="vertical-line" x="70" width="15" height="160"/>
+							<rect class="horizontal-line" y="70" width="160" height="15"/>
+						</svg>
+					</div>
+					<li><a href="https://www.instagram.com/speedfestorange/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+					<li><a href="https://www.facebook.com/speedfestorange2023" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+					<li><a href="https://www.linkedin.com/company/speedfest-orange-team/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+					<li><a href="https://www.youtube.com/@speedfest9028" target="_blank"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+				</ul>
+			</div>
+	
+			<div id="bottom">
+				<p>Oklahoma State University | SpeedFest Orange Team | 2023</p>
+			</div>
+		</footer>
 
-    Competiton
-
-</body>
+	</body>
 
 </html>

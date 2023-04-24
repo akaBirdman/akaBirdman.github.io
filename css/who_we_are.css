@@ -9,6 +9,35 @@
 	position: fixed;
 }
 
+.jonah {
+	margin-top: 5rem;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.jonah > img {
+	max-width: 300px;
+	width: 80%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px white;
+}
+
+.jonah h5 {
+	margin: 0;
+	margin-top: 1rem;
+	font-size: 3rem;
+}
+
+.jonah p {
+	max-width: 600px;
+	width: 80%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
 #page-intro {
 	position: relative;
 	width: 100%;
@@ -146,6 +175,15 @@ h2 {
 .card-content p:hover {
 	opacity: 100;
 }
+
+#rocket { background-image: url("../images/propulsion/rocket-test.JPG"); background-position: 40%; }
+#carson-image { background-image: url("../images/propulsion/Carson.jpg"); background-position: 40%; }
+#erasmo-solder { background-image: url("../images/propulsion/Erasmo\ soldering.png"); background-position: 40%; }
+#mirijan-holding { background-image: url("../images/propulsion/mirijan-holding.JPG"); background-position: 80%; }
+#integration { background-image: url("../images/propulsion/integration.JPG"); background-position: 100%; }
+#allprop { background-image: url("../images/propulsion/allprop.JPG"); background-position: 80%; }
+#omarstuff { background-image: url("../images/propulsion/omarstuff.JPG"); background-position: 80%; }
+
 
 #andrew	{ background-image: url("../images/Structures/andrew.jpg"); background-position: 40%; }
 #tooling { background-image: url("../images/Structures/tooling.JPG"); }
